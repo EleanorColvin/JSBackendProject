@@ -7,7 +7,6 @@ const server = http.createServer((req, res)=> {
     }if(req.url === '/api/courses'){
         res.write(JSON.stringify([1,2,3]));
         res.write('This is a list of offerings');
-        res.write('list');
         res.write(' at BTHS');
         res.end();
     }
